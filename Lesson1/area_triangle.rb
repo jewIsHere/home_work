@@ -1,7 +1,7 @@
 puts "Enter the base lenght: "
 a = gets.chomp.to_f
 
-pust "Enter the height: "
+puts "Enter the height: "
 h = gets.chomp.to_f
 
 s = (a * h) / 2.0
