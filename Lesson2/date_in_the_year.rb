@@ -47,5 +47,5 @@ calendar = {
   december: 31
 }
 
-calendar.each { |m, d| puts d }
+calendar.each { |m, d| d_i = d + m puts d_i }
 
