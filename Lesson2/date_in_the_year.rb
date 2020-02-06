@@ -1,4 +1,3 @@
-
 day = 0
 
 loop do
@@ -32,20 +31,8 @@ else
   jewish = 28
 end
 
-calendar = {
-  january: 31,
-  february: jewish,
-  march: 31,
-  april: 30,
-  may: 31,
-  june: 30,
-  july: 31,
-  august: 31,
-  september: 30,
-  october: 31,
-  november: 30,
-  december: 31
-}
+months = [31, jewish, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-calendar.each { |m, d| d_i = d + m puts d_i }
+requested_date = months.take(month - 1).inject(0, :+)
 
+puts "Date #{month}/#{day}/#{year} assigned a serial number from the beginning of the year: #{requested_date}."
