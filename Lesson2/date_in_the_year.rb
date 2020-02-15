@@ -33,6 +33,6 @@ end
 
 months = [31, jewish, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-requested_date = months.take(month - 1).inject(0, :+)
+requested_date = day + months.take(month - 1).inject(0, :+) #.sum пишет ошибку in `<main>': undefined method `sum' for [31, 29]:Array (NoMethodError)
 
 puts "Date #{month}/#{day}/#{year} assigned a serial number from the beginning of the year: #{requested_date}."
