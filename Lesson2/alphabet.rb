@@ -5,7 +5,7 @@ alphabet.insert(6, "ё")
 puts alphabet
 
 vowel = "аеёиоуыэюя"
-v_hash = Hash.new
+v_hash = {}
 
 alphabet.each.with_index(1) do |v, i|
   v_hash[v] = i + 1
