@@ -25,7 +25,7 @@ loop do
   puts "ERROR, You need to write the correct year value!"
 end
 
-if ((year%4 == 0) && (year%100 != 0)) || (year % 400 == 0)
+if ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)
   jewish = 29
 else
   jewish = 28
