@@ -14,6 +14,3 @@ months = {
 }
 
 months.each { |month, data| puts "#{month}: #{data}" if data == 30 }
-
-
-
